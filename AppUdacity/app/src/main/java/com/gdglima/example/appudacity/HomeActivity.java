@@ -46,4 +46,9 @@ public class HomeActivity extends ActionBarActivity implements OnFragmentListene
     public void setParams(Object obj) {
 
     }
+
+    @Override
+    public void closeApp() {
+        finish();
+    }
 }

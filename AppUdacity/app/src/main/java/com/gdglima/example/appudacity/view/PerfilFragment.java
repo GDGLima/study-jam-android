@@ -12,6 +12,8 @@ import android.view.ViewGroup;
 import com.gdglima.example.appudacity.OnFragmentListener;
 import com.gdglima.example.appudacity.R;
 
+import java.util.Date;
+
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
@@ -70,12 +72,6 @@ public class PerfilFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_perfil, container, false);
     }
 
-    // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-           // mListener.onFragmentInteraction(uri);
-        }
-    }
 
     @Override
     public void onAttach(Activity activity) {
@@ -109,5 +105,8 @@ public class PerfilFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
+        //mListener.setParams(new Date());
+        mListener.closeApp();
     }
 }

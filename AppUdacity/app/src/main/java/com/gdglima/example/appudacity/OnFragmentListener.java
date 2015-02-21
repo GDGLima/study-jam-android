@@ -7,4 +7,5 @@ public interface OnFragmentListener {
 
     void changeFragment(String name);
     void setParams(Object obj);
+    void closeApp();
 }
