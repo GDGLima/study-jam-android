@@ -107,6 +107,6 @@ public class PerfilFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
         //mListener.setParams(new Date());
-        mListener.closeApp();
+       // mListener.closeApp();
     }
 }
