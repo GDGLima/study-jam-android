@@ -6,7 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class HomeActivity extends ActionBarActivity {
+public class HomeActivity extends ActionBarActivity implements OnFragmentListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,5 +35,15 @@ public class HomeActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void changeFragment(String name) {
+
+    }
+
+    @Override
+    public void setParams(Object obj) {
+
     }
 }

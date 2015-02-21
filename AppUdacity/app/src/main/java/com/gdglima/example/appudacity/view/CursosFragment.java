@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.gdglima.example.appudacity.OnFragmentListener;
 import com.gdglima.example.appudacity.R;
 
 /**
@@ -30,7 +31,7 @@ public class CursosFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    private OnFragmentInteractionListener mListener;
+    private OnFragmentListener mListener;
 
     /**
      * Use this factory method to create a new instance of
@@ -73,7 +74,7 @@ public class CursosFragment extends Fragment {
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
         if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
+          //  mListener.onFragmentInteraction(uri);
         }
     }
 
@@ -81,7 +82,7 @@ public class CursosFragment extends Fragment {
     public void onAttach(Activity activity) {
         super.onAttach(activity);
         try {
-            mListener = (OnFragmentInteractionListener) activity;
+            mListener = (OnFragmentListener) activity;
         } catch (ClassCastException e) {
             throw new ClassCastException(activity.toString()
                     + " must implement OnFragmentInteractionListener");
