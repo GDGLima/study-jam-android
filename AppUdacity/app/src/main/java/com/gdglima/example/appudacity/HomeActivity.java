@@ -78,8 +78,8 @@ public class HomeActivity extends ActionBarActivity implements OnFragmentListene
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_home, menu);
-        return true;
+       // getMenuInflater().inflate(R.menu.menu_home, menu);
+        return false;
     }
 
     @Override
@@ -97,7 +97,7 @@ public class HomeActivity extends ActionBarActivity implements OnFragmentListene
             return true;
         }
 
-        return super.onOptionsItemSelected(item);
+        return false;
     }
 
     private class DrawerItemClickListener implements ListView.OnItemClickListener {

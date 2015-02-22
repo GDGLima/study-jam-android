@@ -8,6 +8,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.gdglima.example.appudacity.OnFragmentListener;
 import com.gdglima.example.appudacity.R;
@@ -108,5 +109,13 @@ public class PerfilFragment extends Fragment {
 
         //mListener.setParams(new Date());
        // mListener.closeApp();
+
+        View butClose= getView().findViewById(R.id.butClose);
+        butClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mListener.closeApp();
+            }
+        });
     }
 }
