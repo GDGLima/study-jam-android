@@ -1,0 +1,3 @@
+ORMLite
+http://mvnrepository.com/artifact/com.j256.ormlite/ormlite-android
+http://ormlite.com/
