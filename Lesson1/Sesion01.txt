@@ -1,0 +1,22 @@
+Instructores
+
+Eduardo José Medina Alfaro @eduardomedina emedinaa@gmail.com
+Desarrollador Mobile , Lider Técnico Android Onlinestudioprodutions
+
+Hansy 
+Carlos Piñan
+
+-----------------------------------------------------------------------
+
+Sesion 01
+
+Requisitos
+- JDK Java 1.7
+- Android Studio
+- GIT
+- Github
+- Gradle - Maven 
+
+Android Design
+Medidas fija NO PIXEL, Proporciones , Responsive
+Android != JAVA

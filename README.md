@@ -12,5 +12,6 @@ GDGLima: https://plus.google.com/u/0/+gdglimape/
 Instructores 
 
 Eduardo José Medina Alfaro @eduardomedina emedinaa@gmail.com
+
 Hansy Schmitt schmitt.hansy@gmail.com
 
