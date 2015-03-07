@@ -14,16 +14,27 @@ public class CursoEntity implements Serializable {
     @DatabaseField(generatedId = true)
     private int id;
 
-    public CursoEntity(String name, String url) {
-        this.name = name;
-        this.url = url;
-    }
-
     @DatabaseField
     private String name;
 
     @DatabaseField
     private String url;
+
+    public CursoEntity() {
+    }
+
+    public CursoEntity(int id, String name, String url) {
+        this.id = id;
+        this.name = name;
+        this.url = url;
+    }
+
+    public CursoEntity(String name, String url) {
+        this.name = name;
+        this.url = url;
+    }
+
+
 
 
     public int getId() {
