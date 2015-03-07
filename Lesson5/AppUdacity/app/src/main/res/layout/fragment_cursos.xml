@@ -7,5 +7,7 @@
     <ListView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:scrollbarSize="0dp"
         android:id="@+id/lviCursos" />
 </FrameLayout>

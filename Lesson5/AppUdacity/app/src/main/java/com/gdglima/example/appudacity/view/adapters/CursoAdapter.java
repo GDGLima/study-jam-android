@@ -92,6 +92,7 @@ public class CursoAdapter extends BaseAdapter{
         if (item != null) {
             // TODO Bind your data efficiently with the holder.
             //holder.text.setText(item.getName());
+            holder.tviCursoName.setText(item.getName());
         }
 
 

@@ -15,6 +15,7 @@ import android.widget.ListView;
 import com.gdglima.example.appudacity.OnFragmentListener;
 import com.gdglima.example.appudacity.R;
 import com.gdglima.example.appudacity.model.entity.CursoEntity;
+import com.gdglima.example.appudacity.storage.CursoRepository;
 import com.gdglima.example.appudacity.view.adapters.CursoAdapter;
 
 import java.util.ArrayList;
@@ -40,6 +41,7 @@ public class CursosFragment extends Fragment {
 
     private OnFragmentListener mListener;
     private ListView lviCursos;
+    private CursoRepository cursoRepository;
 
     /**
      * Use this factory method to create a new instance of
@@ -118,7 +120,7 @@ public class CursosFragment extends Fragment {
             super.onActivityCreated(savedInstanceState);
 
         lviCursos= (ListView)getView().findViewById(R.id.lviCursos);
-        List<CursoEntity> cursoEntities= new ArrayList<CursoEntity>();
+        /*List<CursoEntity> cursoEntities= new ArrayList<CursoEntity>();
         cursoEntities.add(new CursoEntity("Matemática","https://campus.com/matematica"));
         cursoEntities.add(new CursoEntity("Lenguaje","https://campus.com/matematica"));
         cursoEntities.add(new CursoEntity("Matemática","https://campus.com/matematica"));
@@ -127,6 +129,21 @@ public class CursosFragment extends Fragment {
 
         BaseAdapter adapter= new CursoAdapter(getActivity(),cursoEntities);
 
+        lviCursos.setAdapter(adapter);*/
+
+        //----------------------------------------------------------
+        cursoRepository= new CursoRepository(getActivity());
+        cursoRepository.create(new CursoEntity("Matemática","https://campus.com/matematica"));
+        cursoRepository.create(new CursoEntity("Física","https://campus.com/matematica"));
+        cursoRepository.create(new CursoEntity("Filosofia","https://campus.com/matematica"));
+        cursoRepository.create(new CursoEntity("Lenguaje","https://campus.com/matematica"));
+        cursoRepository.create(new CursoEntity("Comunicación","https://campus.com/matematica"));
+        cursoRepository.create(new CursoEntity("Base de Datos","https://campus.com/matematica"));
+        cursoRepository.create(new CursoEntity("Ciencias y Humanidades","https://campus.com/matematica"));
+
+        List<CursoEntity> cursoEntities=cursoRepository.getAll();
+        BaseAdapter adapter= new CursoAdapter(getActivity(),cursoEntities);
         lviCursos.setAdapter(adapter);
+
     }
 }
