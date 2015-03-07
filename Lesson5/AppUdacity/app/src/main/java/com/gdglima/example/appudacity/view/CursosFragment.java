@@ -133,13 +133,13 @@ public class CursosFragment extends Fragment {
 
         //----------------------------------------------------------
         cursoRepository= new CursoRepository(getActivity());
-        cursoRepository.create(new CursoEntity("Matemática","https://campus.com/matematica"));
+        /*cursoRepository.create(new CursoEntity("Matemática","https://campus.com/matematica"));
         cursoRepository.create(new CursoEntity("Física","https://campus.com/matematica"));
         cursoRepository.create(new CursoEntity("Filosofia","https://campus.com/matematica"));
         cursoRepository.create(new CursoEntity("Lenguaje","https://campus.com/matematica"));
         cursoRepository.create(new CursoEntity("Comunicación","https://campus.com/matematica"));
         cursoRepository.create(new CursoEntity("Base de Datos","https://campus.com/matematica"));
-        cursoRepository.create(new CursoEntity("Ciencias y Humanidades","https://campus.com/matematica"));
+        cursoRepository.create(new CursoEntity("Ciencias y Humanidades","https://campus.com/matematica"));*/
 
         List<CursoEntity> cursoEntities=cursoRepository.getAll();
         BaseAdapter adapter= new CursoAdapter(getActivity(),cursoEntities);

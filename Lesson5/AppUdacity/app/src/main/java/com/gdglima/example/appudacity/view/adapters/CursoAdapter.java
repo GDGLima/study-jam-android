@@ -77,7 +77,8 @@ public class CursoAdapter extends BaseAdapter{
 
             // TODO store references to your views
             //holder.text = (TextView) convertView.findViewById(R.id.text);
-
+            holder.tviCursoName= (TextView)convertView.findViewById(R.id.tviCursoName);
+            holder.iviCurso= (ImageView)convertView.findViewById(R.id.iviCurso);
             convertView.setTag(holder);
 
         } else {

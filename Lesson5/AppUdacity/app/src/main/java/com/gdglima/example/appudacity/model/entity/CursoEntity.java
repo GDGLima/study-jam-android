@@ -12,7 +12,7 @@ import java.io.Serializable;
 public class CursoEntity implements Serializable {
 
     @DatabaseField(generatedId = true)
-    private int id;
+    private int courseID;
 
     @DatabaseField
     private String name;
@@ -23,8 +23,8 @@ public class CursoEntity implements Serializable {
     public CursoEntity() {
     }
 
-    public CursoEntity(int id, String name, String url) {
-        this.id = id;
+    public CursoEntity(int courseID, String name, String url) {
+        this.courseID = courseID;
         this.name = name;
         this.url = url;
     }
@@ -35,14 +35,12 @@ public class CursoEntity implements Serializable {
     }
 
 
-
-
-    public int getId() {
-        return id;
+    public int getCourseID() {
+        return courseID;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setCourseID(int courseID) {
+        this.courseID = courseID;
     }
 
     public String getName() {
